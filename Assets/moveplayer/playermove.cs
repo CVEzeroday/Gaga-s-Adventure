@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//ã…‡ã„´ã…‡ã…ã…‡ã„´
 
 public class playermove : MonoBehaviour
 {
@@ -38,10 +39,10 @@ public class playermove : MonoBehaviour
 
         
         //Max speed Right
-        if (rigid2D.velocity.x > maxSpeed)  //¿À¸¥ÂÊÀ¸·Î ÀÌµ¿ (+) , ÃÖ´ë ¼Ó·ÂÀ» ³ÑÀ¸¸é 
-            rigid2D.velocity = new Vector2(maxSpeed, rigid2D.velocity.y); //ÇØ´ç ¿ÀºêÁ§Æ®ÀÇ ¼Ó·ÂÀº maxSpeed 
+        if (rigid2D.velocity.x > maxSpeed)  //ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì´ë™ (+) , ìµœëŒ€ ì†ë ¥ì„ ë„˜ìœ¼ë©´ 
+            rigid2D.velocity = new Vector2(maxSpeed, rigid2D.velocity.y); //í•´ë‹¹ ì˜¤ë¸Œì íŠ¸ì˜ ì†ë ¥ì€ maxSpeed 
 
         //Max speed left
-        else if (rigid2D.velocity.x < maxSpeed * (-1)) // ¿ŞÂÊÀ¸·Î ÀÌµ¿ (-) 
-            rigid2D.velocity = new Vector2(maxSpeed * (-1), rigid2D.velocity.y); //y°ªÀº Á¡ÇÁÀÇ ¿µÇâÀÌ¹Ç·Î 0À¸·Î Á¦ÇÑÀ» µÎ¸é ¾ÈµÊ 
+        else if (rigid2D.velocity.x < maxSpeed * (-1)) // ì™¼ìª½ìœ¼ë¡œ ì´ë™ (-) 
+            rigid2D.velocity = new Vector2(maxSpeed * (-1), rigid2D.velocity.y); //yê°’ì€ ì í”„ì˜ ì˜í–¥ì´ë¯€ë¡œ 0ìœ¼ë¡œ ì œí•œì„ ë‘ë©´ ì•ˆë¨ 
 }
